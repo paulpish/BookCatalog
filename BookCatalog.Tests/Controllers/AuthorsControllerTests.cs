@@ -69,7 +69,7 @@ namespace BookCatalog.Tests.Controllers
         public void CreateAuthor_ReturnsCreatedAtActionResult()
         {
             // Arrange
-            var newAuthor = new Author { Name = "New", Surname = "Author", BirthYear = 2000 };
+            var newAuthor = new AuthorCreateDto { Name = "New", Surname = "Author", BirthYear = 2000 };
             _mockDataStore.Setup(repo => repo.Authors).Returns(GetTestAuthors());
 
             // Act

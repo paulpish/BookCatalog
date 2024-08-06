@@ -69,7 +69,7 @@ namespace BookCatalog.Tests.Controllers
         public void CreateBook_ReturnsCreatedAtActionResult()
         {
             // Arrange
-            var newBook = new Book
+            var newBook = new BookCreateDto
             {
                 Title = "New Book",
                 Authors = new List<Author> { new Author { Id = 1, Name = "George", Surname = "Orwell", BirthYear = 1903 } },
