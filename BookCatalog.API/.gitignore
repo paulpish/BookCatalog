@@ -1,0 +1,138 @@
+﻿# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files (Mono)
+*.userprefs
+
+# Mono auto generated files
+mono_crash.*
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Uncomment if you have tasks that create the project's static files in wwwroot
+#wwwroot/
+#node_modules/
+#*.buildinfo
+#out/
+#webroot/
+#artifacts/
+
+# Visual Studio 2019/2022
+.vs/
+.vscode/
+# .vscode/ contains setting specific to this workspace, such as tasks.json, launch.json and settings.json. If you wish to share these settings with your team, exclude .vscode/ from this rule.
+# .vscode/tasks.json: personalize to make sure the project works for you, and then share with your team.
+# .vscode/launch.json: personalize to make sure the project works for you, and then share with your team.
+# .vscode/settings.json: personalize to make sure the project works for you, and then share with your team.
+# .vscode/extensions.json: personalize to make sure the project works for you, and then share with your team.
+# .vscode/*.code-workspace: share with your team.
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# NUnit
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+
+# Build results of an ATL project
+[Dd]ebugPS/
+[Rr]eleasePS/
+dlldata.c
+
+# Build results of a CMake project
+[Cc]MakeFiles/
+[Cc]MakeCache.txt
+[Cc]packaging/
+[Cc]packaging64/
+CMakeScripts/
+CTestTestfile.cmake
+cmake_install.cmake
+Makefile
+
+# MSBuild binary log
+*.binlog
+
+# Rider
+.idea/
+.idea_modules/
+.idea.workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/gradle-jdk.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
+.idea/modules.xml
+.idea/artifacts
+.idea/scopes
+.idea/modules
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/gradle-jdk.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
+.idea/modules.xml
+.idea/artifacts
+.idea/scopes
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/gradle-jdk.xml
+.idea/dictionaries
+.idea/libraries
+.idea/caches
+.idea/modules.xml
+.idea/artifacts
+.idea/scopes
+
+# Auto-generated files (Doxygen)
+html/
+latex/
+
+# JetBrains Rider
+.idea/
+
+# IDE and project structure settings
+.idea/*
+
+# AWS
+aws-exports.js
+
+# Azure Function bindings
+local.settings.json
+
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+Generated/
