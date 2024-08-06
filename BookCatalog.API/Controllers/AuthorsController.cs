@@ -31,9 +31,16 @@ namespace BookCatalog.API.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateAuthor([FromBody] Author author)
+        public IActionResult CreateAuthor([FromBody] AuthorCreateDto authorDto)
         {
-            author.Id = _dataStore.Authors.Count + 1;
+            var newId = _dataStore.Authors.Any() ? _dataStore.Authors.Max(a => a.Id) + 1 : 1;
+            var author = new Author
+            {
+                Id = newId,
+                Name = authorDto.Name,
+                Surname = authorDto.Surname,
+                BirthYear = authorDto.BirthYear
+            };
             _dataStore.Authors.Add(author);
             return CreatedAtAction(nameof(GetAuthor), new { id = author.Id }, author);
         }

@@ -31,9 +31,18 @@ namespace BookCatalog.API.Controllers
         }
 
         [HttpPost]
-        public IActionResult CreateBook([FromBody] Book book)
+        public IActionResult CreateBook([FromBody] BookCreateDto bookDto)
         {
-            book.Id = _dataStore.Books.Count + 1;
+            var newId = _dataStore.Books.Any() ? _dataStore.Books.Max(b => b.Id) + 1 : 1;
+            var book = new Book
+            {
+                Id = newId,
+                Title = bookDto.Title,
+                Authors = bookDto.Authors,
+                Publisher = bookDto.Publisher,
+                Edition = bookDto.Edition,
+                PublishedDate = bookDto.PublishedDate
+            };
             _dataStore.Books.Add(book);
             return CreatedAtAction(nameof(GetBook), new { id = book.Id }, book);
         }
